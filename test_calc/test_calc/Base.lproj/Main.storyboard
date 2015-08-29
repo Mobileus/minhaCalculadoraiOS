@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Y" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obs-E7-xcG">
+                                <rect key="frame" x="36" y="58" width="528" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LQP-CW-203"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Resultado" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlh-Nn-Ksf">
+                                <rect key="frame" x="36" y="96" width="528" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NQ0-ky-A7A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUa-zg-Cif">
+                                <rect key="frame" x="36" y="134" width="528" height="450"/>
+                                <subviews>
+                                    <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="div" translatesAutoresizingMaskIntoConstraints="NO" id="1nd-Md-hSR">
+                                        <rect key="frame" x="0.0" y="225" width="264" height="225"/>
+                                        <color key="backgroundColor" red="0.94117653369999998" green="0.94117653369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="bo3-Ut-kn2" appends="YES" id="lPp-NY-o5o"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mult" translatesAutoresizingMaskIntoConstraints="NO" id="mOj-wa-wCb">
+                                        <rect key="frame" x="264" y="0.0" width="264" height="225"/>
+                                        <color key="backgroundColor" red="0.94117653369999998" green="0.94117653369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="6if-QK-DXT" appends="YES" id="SJr-B6-msY"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="dZE-fv-VM2">
+                                        <rect key="frame" x="0.0" y="0.0" width="264" height="225"/>
+                                        <color key="backgroundColor" red="0.94117653369999998" green="0.94117653369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="fma-V9-FOV" appends="YES" id="bax-kg-ur5"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minus" translatesAutoresizingMaskIntoConstraints="NO" id="n2z-Vq-G0N">
+                                        <rect key="frame" x="264" y="225" width="264" height="225"/>
+                                        <color key="backgroundColor" red="0.94117653369999998" green="0.94117653369999998" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="HV3-Ai-1tS" appends="YES" id="IHE-X7-Fq8"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1nd-Md-hSR" secondAttribute="bottom" id="08z-c4-Dwm"/>
+                                    <constraint firstItem="dZE-fv-VM2" firstAttribute="height" secondItem="mOj-wa-wCb" secondAttribute="height" id="34E-50-Pce"/>
+                                    <constraint firstItem="1nd-Md-hSR" firstAttribute="leading" secondItem="sUa-zg-Cif" secondAttribute="leading" id="C3i-I9-Bm9"/>
+                                    <constraint firstItem="n2z-Vq-G0N" firstAttribute="leading" secondItem="1nd-Md-hSR" secondAttribute="trailing" id="DIw-gZ-fG0"/>
+                                    <constraint firstItem="dZE-fv-VM2" firstAttribute="width" secondItem="1nd-Md-hSR" secondAttribute="width" id="GSi-81-DhQ"/>
+                                    <constraint firstItem="n2z-Vq-G0N" firstAttribute="top" secondItem="mOj-wa-wCb" secondAttribute="bottom" id="OXI-6T-DDj"/>
+                                    <constraint firstItem="dZE-fv-VM2" firstAttribute="width" secondItem="mOj-wa-wCb" secondAttribute="width" id="QEx-kc-7dk"/>
+                                    <constraint firstItem="dZE-fv-VM2" firstAttribute="top" secondItem="sUa-zg-Cif" secondAttribute="top" id="Sdn-eM-U7Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="n2z-Vq-G0N" secondAttribute="bottom" id="UDP-MI-7Fs"/>
+                                    <constraint firstAttribute="trailing" secondItem="n2z-Vq-G0N" secondAttribute="trailing" id="VbU-VV-Tod"/>
+                                    <constraint firstItem="mOj-wa-wCb" firstAttribute="top" secondItem="sUa-zg-Cif" secondAttribute="top" id="Vwa-gM-ZTN"/>
+                                    <constraint firstItem="mOj-wa-wCb" firstAttribute="leading" secondItem="dZE-fv-VM2" secondAttribute="trailing" id="dGB-Yy-LeQ"/>
+                                    <constraint firstItem="dZE-fv-VM2" firstAttribute="leading" secondItem="sUa-zg-Cif" secondAttribute="leading" id="fa4-Jg-tlY"/>
+                                    <constraint firstItem="dZE-fv-VM2" firstAttribute="width" secondItem="n2z-Vq-G0N" secondAttribute="width" id="hR8-51-7ZK"/>
+                                    <constraint firstAttribute="trailing" secondItem="mOj-wa-wCb" secondAttribute="trailing" id="iDS-7V-TPn"/>
+                                    <constraint firstItem="1nd-Md-hSR" firstAttribute="top" secondItem="dZE-fv-VM2" secondAttribute="bottom" id="ibk-1f-0dq"/>
+                                    <constraint firstItem="dZE-fv-VM2" firstAttribute="height" secondItem="1nd-Md-hSR" secondAttribute="height" id="oxI-nD-2Um"/>
+                                    <constraint firstItem="dZE-fv-VM2" firstAttribute="height" secondItem="n2z-Vq-G0N" secondAttribute="height" id="zzt-OY-mEY"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="X" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNx-8A-l5V">
+                                <rect key="frame" x="36" y="20" width="528" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="x8H-Nr-5fj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dlh-Nn-Ksf" secondAttribute="trailing" constant="20" id="098-Ox-sa4"/>
+                            <constraint firstItem="dlh-Nn-Ksf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="7Lv-tC-ovR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sUa-zg-Cif" secondAttribute="trailing" constant="20" id="9IJ-bU-COB"/>
+                            <constraint firstItem="vNx-8A-l5V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="9lf-IG-ooF"/>
+                            <constraint firstItem="Obs-E7-xcG" firstAttribute="top" secondItem="vNx-8A-l5V" secondAttribute="bottom" constant="8" id="JdD-il-ZQI"/>
+                            <constraint firstItem="Obs-E7-xcG" firstAttribute="top" secondItem="vNx-8A-l5V" secondAttribute="bottom" constant="8" id="RFe-39-6X8"/>
+                            <constraint firstItem="dlh-Nn-Ksf" firstAttribute="top" secondItem="Obs-E7-xcG" secondAttribute="bottom" constant="8" id="WHh-yw-Km0"/>
+                            <constraint firstItem="Obs-E7-xcG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="X2u-tJ-7ad"/>
+                            <constraint firstItem="sUa-zg-Cif" firstAttribute="top" secondItem="dlh-Nn-Ksf" secondAttribute="bottom" constant="8" id="cHs-lm-GLe"/>
+                            <constraint firstItem="dlh-Nn-Ksf" firstAttribute="top" secondItem="Obs-E7-xcG" secondAttribute="bottom" constant="8" id="fof-kx-e5A"/>
+                            <constraint firstItem="vNx-8A-l5V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="g33-az-z0r"/>
+                            <constraint firstItem="sUa-zg-Cif" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="lRJ-4K-Hfg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Obs-E7-xcG" secondAttribute="trailing" constant="20" id="pEj-OX-iIF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vNx-8A-l5V" secondAttribute="trailing" constant="20" id="pnC-4n-yfr"/>
+                            <constraint firstItem="sUa-zg-Cif" firstAttribute="top" secondItem="dlh-Nn-Ksf" secondAttribute="bottom" constant="8" id="slN-xV-4f4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sUa-zg-Cif" secondAttribute="bottom" constant="16" id="v7v-LV-PFH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="div" destination="1nd-Md-hSR" id="vWX-O1-51O"/>
+                        <outlet property="div_tap" destination="bo3-Ut-kn2" id="DR5-sn-lU9"/>
+                        <outlet property="minus" destination="n2z-Vq-G0N" id="1is-vL-eqN"/>
+                        <outlet property="minus_tap" destination="HV3-Ai-1tS" id="rhb-TO-An7"/>
+                        <outlet property="mult" destination="mOj-wa-wCb" id="T23-QZ-xC3"/>
+                        <outlet property="mult_tap" destination="6if-QK-DXT" id="Gdx-qd-ezm"/>
+                        <outlet property="plus" destination="dZE-fv-VM2" id="i6b-Zf-TJ9"/>
+                        <outlet property="plus_tap" destination="fma-V9-FOV" id="Kcr-KP-Gey"/>
+                        <outlet property="valueResult" destination="dlh-Nn-Ksf" id="Ang-Lv-pfS"/>
+                        <outlet property="valueX" destination="vNx-8A-l5V" id="hhh-yH-eIC"/>
+                        <outlet property="valueY" destination="Obs-E7-xcG" id="f6P-rd-JCR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="HV3-Ai-1tS">
+                    <connections>
+                        <action selector="minusAction:" destination="BYZ-38-t0r" id="DxK-N5-BDy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bo3-Ut-kn2">
+                    <connections>
+                        <action selector="divisionAction:" destination="BYZ-38-t0r" id="cvY-oe-N49"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6if-QK-DXT">
+                    <connections>
+                        <action selector="mutipleAction:" destination="BYZ-38-t0r" id="yYb-Gv-WRJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="fma-V9-FOV">
+                    <connections>
+                        <action selector="plusAction:" destination="BYZ-38-t0r" id="z8j-g0-rBo"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="div" width="833" height="833"/>
+        <image name="minus" width="833" height="833"/>
+        <image name="mult" width="833" height="833"/>
+        <image name="plus" width="833" height="833"/>
+    </resources>
+</document>
